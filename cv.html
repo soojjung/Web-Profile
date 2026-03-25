@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soojin Jung — CV</title>
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/cv.css" />
+  </head>
+
+  <body>
+    <div class="cv-container">
+      <a class="back-link" href="index.html">&larr; Back to profile</a>
+
+      <!-- Header -->
+      <header class="cv-header">
+        <h1>Soojin Jung</h1>
+        <p class="title">Software Engineer</p>
+        <div class="contact">
+          <span>sojjung3@gmail.com</span>
+          <a href="https://github.com/soojjung" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/soo-jin-jung" target="_blank">LinkedIn</a>
+          <a href="https://medium.com/@sojjung3" target="_blank">Medium</a>
+        </div>
+      </header>
+
+      <!-- About -->
+      <section class="cv-section">
+        <h2>About</h2>
+        <p class="about-text">
+          Frontend developer with 3+ years of experience building production-grade web applications in fintech and AI domains. Skilled at architecting scalable component systems and integrating complex backend/AI services into intuitive user interfaces. Recently expanded into backend and AI engineering to deliver end-to-end solutions.
+        </p>
+      </section>
+
+      <!-- Education -->
+      <section class="cv-section">
+        <h2>Education</h2>
+
+        <div class="timeline-item">
+          <h3>BSc. in Applied Mathematics and Statistics &amp; Economics</h3>
+          <p class="company">Stony Brook, State University of New York — 3.57 GPA</p>
+          <p class="period">Graduated Dec 2018</p>
+        </div>
+
+        <div class="timeline-item">
+          <h3>Backend &amp; AI Engineering Bootcamp</h3>
+          <p class="company">FastCampus K-Digital Training</p>
+          <p class="period">Jun 2025 — Dec 2025</p>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="cv-section">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Frontend</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">TypeScript</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">Next.js</span>
+              <span class="skill-tag">Zustand</span>
+              <span class="skill-tag">TanStack Query</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>Backend &amp; Infra</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">Spring Boot</span>
+              <span class="skill-tag">FastAPI</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">AWS</span>
+              <span class="skill-tag">Docker</span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <h3>AI / ML</h3>
+            <div class="skill-tags">
+              <span class="skill-tag">LangChain</span>
+              <span class="skill-tag">RAG</span>
+              <span class="skill-tag">OpenAI API</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Work Experience -->
+      <section class="cv-section">
+        <h2>Work Experience</h2>
+
+        <div class="timeline-item">
+          <h3>Frontend Developer</h3>
+          <p class="company">BeHappy</p>
+          <p class="period">Oct 2024 — May 2025</p>
+          <ul class="description">
+            <li>Built an AI-powered mobile finance service with real-time chatbot using SSE and OpenAI Whisper (&lt;500ms latency).</li>
+            <li>Engineered a 4-tier data persistence strategy (Recoil + localStorage) managing 310+ dynamic fields with zero data loss.</li>
+            <li>Led a data-driven product pivot using GA4/Mixpanel, uncovering 95% mobile access rate.</li>
+          </ul>
+        </div>
+
+        <div class="timeline-item">
+          <h3>Frontend Developer</h3>
+          <p class="company">aiZENGlobal</p>
+          <p class="period">Mar 2022 — Jun 2024</p>
+          <ul class="description">
+            <li>Architected a tri-portal loan brokerage platform (Customer, Operations, Financial Partners) from the ground up.</li>
+            <li>Built 99+ reusable UI components and a config-based SearchTable pattern, reducing dev time by 60% across 30+ pages.</li>
+            <li>Implemented JWT auto-renewal with Request Queue pattern and 8-stage auth flow for financial data security.</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="cv-section">
+        <h2>Projects</h2>
+
+        <div class="project-item">
+          <h3><a href="https://github.com/soojjung/bbumate-ai" target="_blank">RAG-based AI Policy Assistant</a></h3>
+          <p class="project-period">Aug 2025 — Nov 2025</p>
+          <ul class="project-desc">
+            <li>Built an end-to-end RAG pipeline (LangChain + ChromaDB) centralizing 113+ policies; reduced latency 66% via parallel document grading.</li>
+            <li>Engineered a multi-step fallback strategy (RAG &rarr; Query Re-write &rarr; Web Search) achieving 100% query fulfillment.</li>
+          </ul>
+          <div class="project-tech">
+            <span>LangChain</span>
+            <span>ChromaDB</span>
+            <span>RAG</span>
+            <span>Python</span>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <h3><a href="https://github.com/soojjung/GOTCHA-FE" target="_blank">Gacha Shop Map Service</a></h3>
+          <p class="project-period">Nov 2025 — Present</p>
+          <ul class="project-desc">
+            <li>Architected a 3-layer architecture with Container/Presenter pattern; hybrid state management (TanStack Query + Zustand) across 21 API hooks.</li>
+            <li>Optimized geospatial performance reducing API overhead by 80% and component complexity by 44%.</li>
+          </ul>
+          <div class="project-tech">
+            <span>React</span>
+            <span>TypeScript</span>
+            <span>Zustand</span>
+            <span>TanStack Query</span>
+          </div>
+        </div>
+
+        <div class="project-item">
+          <h3><a href="https://github.com/soojjung/OppaManyColorTone" target="_blank">Personal Color Self-Diagnosis Service</a></h3>
+          <p class="project-period">Feb 2023 — Aug 2024</p>
+          <ul class="project-desc">
+            <li>Scaled to 77,900+ diagnoses and 27,600+ AAU with 91.5% completion rate.</li>
+            <li>Achieved 83% organic traffic (30,000+ sessions) via SEO/SSR optimization, ranking on Google's first page.</li>
+          </ul>
+          <div class="project-tech">
+            <span>React</span>
+            <span>Next.js</span>
+            <span>Recoil</span>
+            <span>SEO</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Additional -->
+      <section class="cv-section">
+        <h2>Additional</h2>
+        <ul class="additional-list">
+          <li>Staff Member, TeoConf 2024 (3rd Edition) — Coordinated event logistics and attendee (200+) engagement</li>
+          <li>Google Analytics Certification (GA4)</li>
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>
