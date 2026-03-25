@@ -1,0 +1,93 @@
+:root {
+  --accent: #fadadd;
+  --bg: #333333;
+  --sub-text: #bbbbbb;
+  --btn-bg: #444;
+  --btn-border: #555;
+  --btn-text: #fff;
+  --font-sans: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--bg);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 320px;
+  align-items: center;
+}
+
+.profile {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  background-image: url("/images/pink_notebook.jpg");
+  background-position: center;
+  background-size: cover;
+  border: 2px solid var(--accent);
+  margin-bottom: 10px;
+}
+
+.main {
+  font-size: 22px;
+  color: var(--accent);
+  font-weight: bold;
+}
+
+.sub {
+  font-size: 14px;
+  color: var(--sub-text);
+  margin-bottom: 36px;
+}
+
+a.button-wrap {
+  background-color: var(--btn-bg);
+  border-radius: 32px;
+  padding: 12px 24px;
+  color: var(--btn-text);
+  font-weight: 500;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--btn-border);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.1);
+  letter-spacing: 0.3px;
+  transition: background 0.3s ease;
+  cursor: pointer;
+  width: 100%;
+  text-decoration: none;
+}
+
+a.button-wrap:hover {
+  background-color: #555;
+}
+
+.icon {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+}
+
+.button-wrap span:nth-child(2) {
+  flex: 1;
+  text-align: center;
+}
+
+.dots {
+  font-size: 18px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

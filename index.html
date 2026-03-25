@@ -1,129 +1,31 @@
-<!DOCTYPE html>
-<html lang="ko">
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:title" content="정수진 프로필" />
-    <meta property="og:description" content="Frontend Developer" />
+    <meta property="og:title" content="Soojin Jung Profile" />
+    <meta property="og:description" content="Software Engineer" />
     <meta property="og:image" content="images/pink_notebook.jpg" />
-    <title>정수진 프로필</title>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
-
-      :root {
-        --pink-main: #fadadd;
-        --pink-light: #ffe4e1;
-        --pink-accent: #f8c8dc;
-        --lavender: #e6e6fa;
-        --white: #ffffff;
-        --bg: #333333;
-        --btn-bg: #444;
-        --btn-border: #555;
-        --btn-text: #fff;
-        --font-sans: 'Inter', sans-serif;
-      }
-
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: var(--font-sans);
-      }
-
-      body {
-        background-color: var(--bg);
-        min-height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 2rem;
-      }
-
-      .wrap {
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        width: 320px;
-        align-items: center;
-      }
-
-      .profile {
-        width: 128px;
-        height: 128px;
-        border-radius: 50%;
-        background-image: url("/images/pink_notebook.jpg");
-        background-position: center;
-        background-size: cover;
-        border: 2px solid var(--pink-main);
-        margin-bottom: 10px;
-      }
-
-      .main {
-        font-size: 22px;
-        color: var(--pink-main);
-        font-weight: bold;
-      }
-
-      .sub {
-        font-size: 14px;
-        color: #bbbbbb;
-        margin-bottom: 36px;
-      }
-
-      a.button-wrap {
-        background-color: var(--btn-bg);
-        border-radius: 32px;
-        padding: 12px 24px;
-        color: var(--btn-text);
-        font-weight: 500;
-        font-size: 15px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        border: 1px solid var(--btn-border);
-        box-shadow: inset 0 1px 1px rgba(255,255,255,0.1);
-        letter-spacing: 0.3px;
-        transition: background 0.3s ease;
-        cursor: pointer;
-        width: 100%;
-        text-decoration: none;
-      }
-
-      a.button-wrap:hover {
-        background-color: #555;
-      }
-
-      .icon {
-        font-size: 18px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 24px;
-      }
-
-      .button-wrap span:nth-child(2) {
-        flex: 1;
-        text-align: center;
-      }
-
-      .dots {
-        font-size: 18px;
-        margin-bottom: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-    </style>
+    <title>Soojin Jung Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" />
+    <link rel="stylesheet" href="styles/common.css" />
+    <link rel="stylesheet" href="styles/index.css" />
   </head>
 
   <body>
     <div class="wrap">
       <div class="profile"></div>
       <h1 class="main">Soojin Jung</h1>
-      <p class="sub">Frontend Developer</p>
+      <p class="sub">Software Engineer</p>
 
-      <a class="button-wrap" href="https://www.linkedin.com/in/soojin-jung-313191284/" target="_blank">
+      <a
+        class="button-wrap"
+        href="https://www.linkedin.com/in/soojin-jung-313191284/"
+        target="_blank"
+      >
         <span class="icon">🎧</span>
         <span>linkedin</span>
         <span class="dots">...</span>
@@ -133,14 +35,18 @@
         <span>github</span>
         <span class="dots">...</span>
       </a>
-      <a class="button-wrap" href="https://medium.com/@sojjung3" target="_blank">
+      <a
+        class="button-wrap"
+        href="https://medium.com/@sojjung3"
+        target="_blank"
+      >
         <span class="icon">🫧</span>
         <span>medium</span>
         <span class="dots">...</span>
       </a>
-      <a class="button-wrap" href="https://www.instagram.com/soojjnng" target="_blank">
-        <span class="icon">♥</span>
-        <span>instagram</span>
+      <a class="button-wrap" href="cv.html" target="_blank">
+        <span class="icon">📧</span>
+        <span>cv / resume</span>
         <span class="dots">...</span>
       </a>
     </div>
