@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,8 +7,14 @@
     <title>Soojin Jung — CV</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
     <link rel="stylesheet" href="styles/common.css" />
     <link rel="stylesheet" href="styles/cv.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.2/html2pdf.bundle.min.js"></script>
@@ -17,12 +23,23 @@
   <body>
     <div class="cv-container">
       <div class="cv-top-bar">
-        <a class="back-link" href="index.html">&larr; <span data-lang-en>Back to profile</span><span data-lang-ko>프로필로 돌아가기</span></a>
+        <a class="back-link" href="index.html"
+          >&larr; <span data-lang-en>Back to profile</span
+          ><span data-lang-ko>프로필로 돌아가기</span></a
+        >
         <div class="top-bar-actions">
-          <button class="btn-pill" onclick="downloadPdf()" aria-label="Download PDF">
+          <button
+            class="btn-pill"
+            onclick="downloadPdf()"
+            aria-label="Download PDF"
+          >
             <span data-lang-en>PDF</span><span data-lang-ko>PDF</span> &darr;
           </button>
-          <button class="btn-pill" onclick="toggleLang()" aria-label="Toggle language">
+          <button
+            class="btn-pill"
+            onclick="toggleLang()"
+            aria-label="Toggle language"
+          >
             <span data-lang-en>KO</span><span data-lang-ko>EN</span>
           </button>
         </div>
@@ -30,33 +47,73 @@
 
       <!-- Header -->
       <header class="cv-header">
-        <h1><span data-lang-en>Soojin Jung</span><span data-lang-ko>정수진</span></h1>
-        <p class="title"><span data-lang-en>Software Engineer</span><span data-lang-ko>소프트웨어 엔지니어</span></p>
+        <h1>
+          <span data-lang-en>Soojin Jung</span><span data-lang-ko>정수진</span>
+        </h1>
+        <p class="title">
+          <span data-lang-en>Software Engineer</span
+          ><span data-lang-ko>소프트웨어 엔지니어</span>
+        </p>
         <div class="contact">
           <span>sojjung3@gmail.com</span>
           <span class="dot">·</span>
-          <a href="https://github.com/soojjung" target="_blank">github.com/soojjung</a>
-          <a href="https://www.linkedin.com/in/soo-jin-jung" target="_blank">linkedin.com/in/soo-jin-jung</a>
+          <span
+            ><a
+              href="https://www.linkedin.com/in/soo-jin-jung"
+              target="_blank"
+              data-lang-en
+              >linkedin.com/in/soo-jin-jung</a
+            ><span data-lang-ko>010-3724-6480</span></span
+          >
+          <a href="https://github.com/soojjung" target="_blank"
+            >github.com/soojjung</a
+          >
           <span class="dot">·</span>
-          <a href="https://medium.com/@sojjung3" target="_blank">medium.com/@sojjung3</a>
+          <a href="https://medium.com/@sojjung3" target="_blank"
+            >medium.com/@sojjung3</a
+          >
         </div>
       </header>
 
       <!-- About -->
-      <section class="cv-section">
+      <section class="cv-section cv-section-about">
         <h2><span data-lang-en>About</span><span data-lang-ko>소개</span></h2>
         <p class="about-text">
-          <span data-lang-en>3+ years of frontend development experience building production-grade web applications in fintech and AI domains. Skilled at architecting scalable component systems and integrating complex backend/AI services into intuitive user interfaces. Passionate about data-driven decision making, having led product pivots through GA4/Mixpanel analytics and established code review processes that measurably improved quality. Recently expanded into backend and AI engineering — building RAG pipelines, REST APIs, and CI/CD workflows — to deliver end-to-end solutions.</span>
-          <span data-lang-ko>핀테크 및 AI 분야에서 3년 이상의 프론트엔드 개발 경험을 바탕으로 프로덕션급 웹 애플리케이션을 구축해 왔습니다. 확장 가능한 컴포넌트 시스템 설계와 복잡한 백엔드/AI 서비스를 직관적인 사용자 인터페이스로 통합하는 데 강점이 있습니다. GA4/Mixpanel 분석을 통한 데이터 기반 의사결정과 코드 리뷰 프로세스 도입으로 품질을 개선한 경험이 있습니다. 최근 백엔드 및 AI 엔지니어링으로 영역을 확장하여 RAG 파이프라인, REST API, CI/CD 워크플로우 등 엔드투엔드 솔루션을 제공하고 있습니다.</span>
+          <span data-lang-en
+            >3+ years of frontend development experience building
+            production-grade web applications in fintech and AI domains. Skilled
+            at architecting scalable component systems and integrating complex
+            backend/AI services into intuitive user interfaces. Passionate about
+            data-driven decision making, having led product pivots through
+            GA4/Mixpanel analytics and established code review processes that
+            measurably improved quality. Recently expanded into backend and AI
+            engineering — building RAG pipelines, REST APIs, and CI/CD workflows
+            — to deliver end-to-end solutions.</span
+          >
+          <span data-lang-ko
+            >핀테크 및 AI 분야에서 3년 이상의 프론트엔드 개발 경험을 바탕으로
+            프로덕션급 웹 애플리케이션을 구축해 왔습니다. 확장 가능한 컴포넌트
+            시스템 설계와 복잡한 백엔드/AI 서비스를 직관적인 사용자 인터페이스로
+            통합하는 데 강점이 있습니다. GA4/Mixpanel 분석을 통한 데이터 기반
+            의사결정과 코드 리뷰 프로세스 도입으로 품질을 개선한 경험이
+            있습니다. 최근에는 백엔드 및 AI 엔지니어링으로 영역을 확장하여 RAG
+            파이프라인, REST API, CI/CD 워크플로우 등 엔드투엔드 솔루션을
+            제공하고 있습니다.</span
+          >
         </p>
       </section>
 
       <!-- Skills -->
-      <section class="cv-section">
-        <h2><span data-lang-en>Skills</span><span data-lang-ko>기술 스택</span></h2>
+      <section class="cv-section cv-section-skills">
+        <h2>
+          <span data-lang-en>Skills</span><span data-lang-ko>기술 스택</span>
+        </h2>
         <div class="skills-list">
           <div class="skill-row">
-            <h3><span data-lang-en>Frontend</span><span data-lang-ko>프론트엔드</span></h3>
+            <h3>
+              <span data-lang-en>Frontend</span
+              ><span data-lang-ko>프론트엔드</span>
+            </h3>
             <div class="skill-tags">
               <span class="skill-tag">TypeScript</span>
               <span class="skill-tag">React</span>
@@ -67,7 +124,10 @@
             </div>
           </div>
           <div class="skill-row">
-            <h3><span data-lang-en>Backend &amp; Infra</span><span data-lang-ko>백엔드 &amp; 인프라</span></h3>
+            <h3>
+              <span data-lang-en>Backend &amp; Infra</span
+              ><span data-lang-ko>백엔드 &amp; 인프라</span>
+            </h3>
             <div class="skill-tags">
               <span class="skill-tag">Java</span>
               <span class="skill-tag">Python</span>
@@ -98,25 +158,54 @@
       </section>
 
       <!-- Work Experience -->
-      <section class="cv-section">
-        <h2><span data-lang-en>Work Experience</span><span data-lang-ko>경력</span></h2>
+      <section class="cv-section cv-section-experience">
+        <h2>
+          <span data-lang-en>Work Experience</span
+          ><span data-lang-ko>경력</span>
+        </h2>
 
         <div class="timeline-item">
-          <h3><span data-lang-en>Frontend Developer</span><span data-lang-ko>프론트엔드 개발자</span></h3>
+          <h3>
+            <span data-lang-en>Frontend Developer</span
+            ><span data-lang-ko>프론트엔드 개발자</span>
+          </h3>
           <p class="company">BeHappy</p>
-          <p class="period"><span data-lang-en>Oct 2024 — May 2025</span><span data-lang-ko>2024년 10월 — 2025년 5월</span></p>
+          <p class="period">
+            <span data-lang-en>Oct 2024 — May 2025</span
+            ><span data-lang-ko>2024년 10월 — 2025년 5월</span>
+          </p>
           <ul class="description">
             <li>
-              <span data-lang-en>Built an AI-powered mobile finance service with real-time chatbot using SSE and OpenAI Whisper (&lt;500ms latency).</span>
-              <span data-lang-ko>SSE와 OpenAI Whisper를 활용한 실시간 챗봇 기반 AI 모바일 금융 서비스 구축 (500ms 미만 지연시간)</span>
+              <span data-lang-en
+                >Built an AI-powered mobile finance service with real-time
+                chatbot using SSE and OpenAI Whisper (&lt;500ms latency).</span
+              >
+              <span data-lang-ko
+                >SSE와 OpenAI Whisper를 활용한 실시간 챗봇 기반 AI 모바일 금융
+                서비스 구축 (500ms 미만 지연시간)</span
+              >
             </li>
             <li>
-              <span data-lang-en>Implemented Zod schema validation for AI chatbot data integrity, reducing runtime errors and ensuring type-safe communication across 310+ dynamic fields.</span>
-              <span data-lang-ko>AI 챗봇 데이터 무결성을 위한 Zod 스키마 검증 도입, 310개 이상 동적 필드에서 런타임 에러 감소 및 타입 안전 통신 확보</span>
+              <span data-lang-en
+                >Implemented Zod schema validation for AI chatbot data
+                integrity, reducing runtime errors and ensuring type-safe
+                communication across 310+ dynamic fields.</span
+              >
+              <span data-lang-ko
+                >AI 챗봇 데이터 무결성을 위한 Zod 스키마 검증 도입, 310개 이상
+                동적 필드에서 런타임 에러 감소 및 타입 안전 통신 확보</span
+              >
             </li>
             <li>
-              <span data-lang-en>Drove a data-driven product pivot using GA4/Mixpanel analytics, discovering 60+ age user segment and 95% mobile access rate — directly shaping the mobile-first UX strategy.</span>
-              <span data-lang-ko>GA4/Mixpanel 분석으로 60대 이상 사용자 세그먼트 및 95% 모바일 접속률 발견, 모바일 퍼스트 UX 전략 수립 주도</span>
+              <span data-lang-en
+                >Drove a data-driven product pivot using GA4/Mixpanel analytics,
+                discovering 60+ age user segment and 95% mobile access rate —
+                directly shaping the mobile-first UX strategy.</span
+              >
+              <span data-lang-ko
+                >GA4/Mixpanel 분석으로 60대 이상 사용자 세그먼트 및 95% 모바일
+                접속률 발견, 모바일 퍼스트 UX 전략 수립 주도</span
+              >
             </li>
           </ul>
           <div class="project-tech">
@@ -130,21 +219,49 @@
         </div>
 
         <div class="timeline-item">
-          <h3><span data-lang-en>Frontend Developer</span><span data-lang-ko>프론트엔드 개발자</span></h3>
+          <h3>
+            <span data-lang-en>Frontend Developer</span
+            ><span data-lang-ko>프론트엔드 개발자</span>
+          </h3>
           <p class="company">aiZENGlobal</p>
-          <p class="period"><span data-lang-en>Mar 2022 — Jun 2024</span><span data-lang-ko>2022년 3월 — 2024년 6월</span></p>
+          <p class="period">
+            <span data-lang-en>Mar 2022 — Jun 2024</span
+            ><span data-lang-ko>2022년 3월 — 2024년 6월</span>
+          </p>
           <ul class="description">
             <li>
-              <span data-lang-en>Architected a React 18 SPA tri-portal loan brokerage platform (Customer, Operations, Financial Partners) from the ground up.</span>
-              <span data-lang-ko>React 18 SPA 기반 고객·운영·금융 파트너 3개 포탈 대출 중개 플랫폼 설계 및 구축</span>
+              <span data-lang-en
+                >Architected a React 18 SPA tri-portal loan brokerage platform
+                (Customer, Operations, Financial Partners) from the ground
+                up.</span
+              >
+              <span data-lang-ko
+                >React 18 SPA 기반 고객·운영·금융 파트너 3개 포탈 대출 중개
+                플랫폼 설계 및 구축</span
+              >
             </li>
             <li>
-              <span data-lang-en>Built 99+ reusable UI components and a config-based SearchTable pattern, reducing dev time by 60% across 30+ pages.</span>
-              <span data-lang-ko>99개 이상 재사용 가능한 UI 컴포넌트 및 설정 기반 SearchTable 패턴 구축, 30개 이상 페이지에서 개발 시간 60% 단축</span>
+              <span data-lang-en
+                >Built 99+ reusable UI components and a config-based SearchTable
+                pattern, reducing dev time by 60% across 30+ pages.</span
+              >
+              <span data-lang-ko
+                >99개 이상 재사용 가능한 UI 컴포넌트 및 설정 기반 SearchTable
+                패턴 구축, 30개 이상 페이지에서 개발 시간 60% 단축</span
+              >
             </li>
             <li>
-              <span data-lang-en>Established code review process that cut QA bug defects by 50% and reduced maintenance effort by 70%; implemented JWT auto-renewal with Request Queue pattern for financial data security.</span>
-              <span data-lang-ko>코드 리뷰 프로세스 도입으로 QA 버그 결함 50% 감소 및 유지보수 공수 70% 절감, Request Queue 패턴 기반 JWT 자동 갱신으로 금융 데이터 보안 강화</span>
+              <span data-lang-en
+                >Established code review process that cut QA bug defects by 50%
+                and reduced maintenance effort by 70%; implemented JWT
+                auto-renewal with Request Queue pattern for financial data
+                security.</span
+              >
+              <span data-lang-ko
+                >코드 리뷰 프로세스 도입으로 QA 버그 결함 50% 감소 및 유지보수
+                공수 70% 절감, Request Queue 패턴 기반 JWT 자동 갱신으로 금융
+                데이터 보안 강화</span
+              >
             </li>
           </ul>
           <div class="project-tech">
@@ -158,24 +275,50 @@
 
       <!-- Projects -->
       <section class="cv-section cv-section-projects">
-        <h2><span data-lang-en>Projects</span><span data-lang-ko>프로젝트</span></h2>
+        <h2>
+          <span data-lang-en>Projects</span><span data-lang-ko>프로젝트</span>
+        </h2>
 
         <div class="timeline-item">
-          <h3><span data-lang-en>Gacha Shop Map Service</span><span data-lang-ko>가챠샵 지도 서비스</span></h3>
-          <p class="project-link"><a href="https://github.com/soojjung/GOTCHA-FE" target="_blank">github.com/soojjung/GOTCHA-FE</a></p>
-          <p class="period"><span data-lang-en>Dec 2025 — Present</span><span data-lang-ko>2025년 12월 — 현재</span></p>
+          <h3>
+            <span data-lang-en>Gacha Shop Map Service</span
+            ><span data-lang-ko>가챠샵 지도 서비스</span>
+          </h3>
+          <p class="project-link">
+            <a href="https://github.com/soojjung/GOTCHA-FE" target="_blank"
+              >github.com/soojjung/GOTCHA-FE</a
+            >
+          </p>
+          <p class="period">
+            <span data-lang-en>Dec 2025 — Present</span
+            ><span data-lang-ko>2025년 12월 — 현재</span>
+          </p>
           <ul class="description">
             <li>
-              <span data-lang-en>Architected a 3-layer architecture with Container/Presenter pattern; hybrid state management (TanStack Query + Zustand) across 21 API hooks.</span>
-              <span data-lang-ko>Container/Presenter 패턴 기반 3계층 아키텍처 설계, 21개 API 훅에 걸쳐 하이브리드 상태 관리(TanStack Query + Zustand) 적용</span>
+              <span data-lang-en
+                >Architected a 3-layer architecture with Container/Presenter
+                pattern; hybrid state management (TanStack Query + Zustand)
+                across 21 API hooks.</span
+              >
+              <span data-lang-ko
+                >Container/Presenter 패턴 기반 3계층 아키텍처 설계, 21개 API
+                훅에 걸쳐 하이브리드 상태 관리(TanStack Query + Zustand)
+                적용</span
+              >
             </li>
             <li>
-              <span data-lang-en>Optimized geospatial performance reducing API overhead by 80% through strategic map optimization patterns.</span>
-              <span data-lang-ko>전략적 지도 최적화 패턴 적용으로 지리공간 성능 개선 및 API 오버헤드 80% 감소</span>
+              <span data-lang-en
+                >Optimized geospatial performance reducing API overhead by 80%
+                through strategic map optimization patterns.</span
+              >
+              <span data-lang-ko
+                >전략적 지도 최적화 패턴 적용으로 지리공간 성능 개선 및 API
+                오버헤드 80% 감소</span
+              >
             </li>
-            <li>
-              <span data-lang-en>Reduced component complexity by 44% through hook refactoring and centralized API wrapper with QueryErrorBoundaries.</span>
-              <span data-lang-ko>훅 리팩토링과 QueryErrorBoundaries 기반 중앙화된 API 래퍼 구축으로 컴포넌트 복잡도 44% 감소</span>
+            <li data-lang-ko>
+              훅 리팩토링과 QueryErrorBoundaries 기반 중앙화된 API 래퍼 구축으로
+              컴포넌트 복잡도 44% 감소
             </li>
           </ul>
           <div class="project-tech">
@@ -189,21 +332,45 @@
         </div>
 
         <div class="timeline-item">
-          <h3><span data-lang-en>RAG-based AI Policy Assistant</span><span data-lang-ko>RAG 기반 AI 정책 도우미</span></h3>
-          <p class="project-link"><a href="https://github.com/soojjung/bbumate-ai" target="_blank">github.com/soojjung/bbumate-ai</a></p>
-          <p class="period"><span data-lang-en>Sep 2025 — Nov 2025</span><span data-lang-ko>2025년 9월 — 2025년 11월</span></p>
+          <h3>
+            <span data-lang-en>RAG-based AI Policy Assistant</span
+            ><span data-lang-ko>RAG 기반 AI 정책 도우미</span>
+          </h3>
+          <p class="project-link">
+            <a href="https://github.com/soojjung/bbumate-ai" target="_blank"
+              >github.com/soojjung/bbumate-ai</a
+            >
+          </p>
+          <p class="period">
+            <span data-lang-en>Sep 2025 — Nov 2025</span
+            ><span data-lang-ko>2025년 9월 — 2025년 11월</span>
+          </p>
           <ul class="description">
             <li>
-              <span data-lang-en>Architected an end-to-end RAG pipeline (LangChain + ChromaDB) centralizing 113+ policies; reduced latency 66% via parallel document grading.</span>
-              <span data-lang-ko>LangChain + ChromaDB 기반 엔드투엔드 RAG 파이프라인 구축, 113개 이상 정책 통합 관리 및 병렬 문서 평가로 지연시간 66% 단축</span>
+              <span data-lang-en
+                >Architected an end-to-end RAG pipeline (LangChain + ChromaDB)
+                centralizing 113+ policies; reduced latency 66% via parallel
+                document grading.</span
+              >
+              <span data-lang-ko
+                >LangChain + ChromaDB 기반 엔드투엔드 RAG 파이프라인 구축, 113개
+                이상 정책 통합 관리 및 병렬 문서 평가로 지연시간 66% 단축</span
+              >
             </li>
             <li>
-              <span data-lang-en>Engineered a multi-step fallback strategy (RAG &rarr; Query Re-write &rarr; Web Search) achieving 100% query fulfillment.</span>
-              <span data-lang-ko>RAG &rarr; 쿼리 재작성 &rarr; 웹 검색 순서의 다단계 폴백 전략 설계, 100% 쿼리 처리율 달성</span>
+              <span data-lang-en
+                >Engineered a multi-step fallback strategy (RAG &rarr; Query
+                Re-write &rarr; Web Search) achieving 100% query
+                fulfillment.</span
+              >
+              <span data-lang-ko
+                >RAG &rarr; 쿼리 재작성 &rarr; 웹 검색 순서의 다단계 폴백 전략
+                설계, 100% 쿼리 처리율 달성</span
+              >
             </li>
-            <li>
-              <span data-lang-en>Developed a high-reliability grounding system with 97+ URL mappings, ensuring 100% source attribution to official documentation.</span>
-              <span data-lang-ko>97개 이상 URL 매핑 기반 고신뢰 그라운딩 시스템 구축, 모든 AI 응답에 공식 문서 출처 100% 명시</span>
+            <li data-lang-ko>
+              97개 이상 URL 매핑 기반 고신뢰 그라운딩 시스템 구축, 모든 AI
+              응답에 공식 문서 출처 100% 명시
             </li>
           </ul>
           <div class="project-tech">
@@ -215,21 +382,45 @@
         </div>
 
         <div class="timeline-item">
-          <h3><span data-lang-en>Personal Color Self-Diagnosis Service</span><span data-lang-ko>퍼스널 컬러 자가진단 서비스</span></h3>
-          <p class="project-link"><a href="https://github.com/soojjung/OppaManyColorTone" target="_blank">github.com/soojjung/OppaManyColorTone</a></p>
-          <p class="period"><span data-lang-en>Feb 2023 — Aug 2024</span><span data-lang-ko>2023년 2월 — 2024년 8월</span></p>
+          <h3>
+            <span data-lang-en>Personal Color Self-Diagnosis Service</span
+            ><span data-lang-ko>퍼스널 컬러 자가진단 서비스</span>
+          </h3>
+          <p class="project-link">
+            <a
+              href="https://github.com/soojjung/OppaManyColorTone"
+              target="_blank"
+              >github.com/soojjung/OppaManyColorTone</a
+            >
+          </p>
+          <p class="period">
+            <span data-lang-en>Feb 2023 — Aug 2024</span
+            ><span data-lang-ko>2023년 2월 — 2024년 8월</span>
+          </p>
           <ul class="description">
             <li>
-              <span data-lang-en>Engineered a 9-stage algorithm using 36 curated chips with bonus round re-evaluation, ensuring a 100% diagnosis rate.</span>
-              <span data-lang-ko>36개 선별 칩과 보너스 라운드 재평가를 활용한 9단계 알고리즘 설계, 100% 진단율 달성</span>
+              <span data-lang-en
+                >Engineered a 9-stage algorithm using 36 curated chips with
+                bonus round re-evaluation, ensuring a 100% diagnosis rate.</span
+              >
+              <span data-lang-ko
+                >36개 선별 칩과 보너스 라운드 재평가를 활용한 9단계 알고리즘
+                설계, 100% 진단율 달성</span
+              >
             </li>
             <li>
-              <span data-lang-en>Scaled to 77,900+ diagnoses and 27,600+ AAU with 91.5% completion rate.</span>
-              <span data-lang-ko>77,900회 이상 진단 및 27,600명 이상 AAU 달성, 91.5% 완료율 기록</span>
+              <span data-lang-en
+                >Scaled to 77,900+ diagnoses and 27,600+ AAU with 91.5%
+                completion rate.</span
+              >
+              <span data-lang-ko
+                >77,900회 이상 진단 및 27,600명 이상 AAU 달성, 91.5% 완료율
+                기록</span
+              >
             </li>
-            <li>
-              <span data-lang-en>Achieved 83% organic traffic (30,000+ sessions) via SEO/SSR optimization, ranking on Google's first page.</span>
-              <span data-lang-ko>SEO/SSR 최적화로 83% 자연 유입 트래픽(30,000회 이상 세션) 달성, 구글 첫 페이지 노출</span>
+            <li data-lang-ko>
+              SEO/SSR 최적화로 83% 자연 유입 트래픽(30,000회 이상 세션) 달성,
+              구글 첫 페이지 노출
             </li>
           </ul>
           <div class="project-tech">
@@ -244,87 +435,160 @@
       </section>
 
       <!-- Education -->
-      <section class="cv-section">
-        <h2><span data-lang-en>Education</span><span data-lang-ko>학력</span></h2>
+      <section class="cv-section cv-section-education">
+        <h2>
+          <span data-lang-en>Education</span><span data-lang-ko>학력</span>
+        </h2>
 
         <div class="timeline-item">
-          <h3><span data-lang-en>BSc. in Applied Mathematics and Statistics &amp; Economics</span><span data-lang-ko>응용수학 및 통계학 &amp; 경제학 학사</span></h3>
-          <p class="company"><span data-lang-en>Stony Brook, State University of New York — 3.57 GPA</span><span data-lang-ko>스토니브룩, 뉴욕주립대학교 — GPA 3.57</span></p>
-          <p class="period"><span data-lang-en>Graduated Dec 2018</span><span data-lang-ko>2018년 12월 졸업</span></p>
+          <h3>
+            <span data-lang-en
+              >BSc. in Applied Mathematics and Statistics &amp; Economics</span
+            ><span data-lang-ko>응용수학 및 통계학 &amp; 경제학 학사</span>
+          </h3>
+          <p class="company">
+            <span data-lang-en
+              >Stony Brook, State University of New York — GPA 3.57 / 4.0</span
+            ><span data-lang-ko
+              >스토니브룩, 뉴욕주립대학교 — GPA 3.57 / 4.0</span
+            >
+          </p>
+          <p class="period">
+            <span data-lang-en>Graduated Dec 2018</span
+            ><span data-lang-ko>2018년 12월 졸업</span>
+          </p>
         </div>
 
         <div class="timeline-item">
-          <h3><span data-lang-en>Backend &amp; AI Engineering Bootcamp</span><span data-lang-ko>백엔드 &amp; AI 엔지니어링 부트캠프</span></h3>
-          <p class="company"><span data-lang-en>FastCampus K-Digital Training</span><span data-lang-ko>패스트캠퍼스 K-Digital Training</span></p>
-          <p class="period"><span data-lang-en>Jun 2025 — Dec 2025</span><span data-lang-ko>2025년 6월 — 2025년 12월</span></p>
+          <h3>
+            <span data-lang-en>Backend &amp; AI Engineering Bootcamp</span
+            ><span data-lang-ko>백엔드 &amp; AI 엔지니어링 부트캠프</span>
+          </h3>
+          <p class="company">
+            <span data-lang-en>FastCampus K-Digital Training</span
+            ><span data-lang-ko>패스트캠퍼스 K-Digital Training</span>
+          </p>
+          <p class="period">
+            <span data-lang-en>Jun 2025 — Dec 2025</span
+            ><span data-lang-ko>2025년 6월 — 2025년 12월</span>
+          </p>
           <ul class="description">
-            <li>
-              <span data-lang-en>Java/Spring Boot backend development, Data Structures &amp; Algorithms, Database Systems, OS &amp; Networks (196h)</span>
-              <span data-lang-ko>Java/Spring Boot 백엔드 개발, 자료구조 &amp; 알고리즘, 데이터베이스, OS &amp; 네트워크 (196h)</span>
+            <li data-lang-ko>
+              Java/Spring Boot 백엔드 개발, 자료구조 &amp; 알고리즘,
+              데이터베이스, OS &amp; 네트워크 (196h)
             </li>
-            <li>
-              <span data-lang-en>AI &amp; Machine Learning: Python-based ML workflow, NLP fundamentals, Transformer-based LLMs (BERT, GPT) (34h)</span>
-              <span data-lang-ko>AI &amp; 머신러닝: Python 기반 ML 워크플로우, NLP 기초, Transformer 기반 LLM (BERT, GPT) (34h)</span>
+            <li data-lang-ko>
+              AI &amp; 머신러닝: Python 기반 ML 워크플로우, NLP 기초,
+              Transformer 기반 LLM (BERT, GPT) (34h)
             </li>
           </ul>
         </div>
       </section>
 
       <!-- Additional -->
-      <section class="cv-section">
-        <h2><span data-lang-en>Additional</span><span data-lang-ko>기타 활동</span></h2>
+      <section class="cv-section cv-section-additional">
+        <h2>
+          <span data-lang-en>Additional</span
+          ><span data-lang-ko>기타 활동</span>
+        </h2>
         <ul class="additional-list">
           <li>
-            <span data-lang-en>Staff Member, TeoConf 2024 (3rd Edition) — Planned event programs and coordinated logistics for 200+ attendees</span>
-            <span data-lang-ko>TeoConf 2024 (3회) 스태프 — 이벤트 기획 및 200명 이상 참가자 행사 운영 담당</span>
+            <span data-lang-en
+              >Staff Member, TeoConf 2024 (3rd Edition) — Planned event programs
+              and coordinated logistics for 200+ attendees</span
+            >
+            <span data-lang-ko
+              >TeoConf 2024 (3회) 스태프 — 이벤트 기획 및 200명 이상 참가자 행사
+              운영 담당</span
+            >
           </li>
         </ul>
       </section>
     </div>
 
     <script>
+      // English order: About → Education → Skills → Experience → Projects → Additional
+      var enOrder = [
+        ".cv-section-about",
+        ".cv-section-education",
+        ".cv-section-skills",
+        ".cv-section-experience",
+        ".cv-section-projects",
+        ".cv-section-additional",
+      ];
+      // Korean order: About → Skills → Experience → Projects → Education → Additional
+      var koOrder = [
+        ".cv-section-about",
+        ".cv-section-skills",
+        ".cv-section-experience",
+        ".cv-section-projects",
+        ".cv-section-education",
+        ".cv-section-additional",
+      ];
+
+      function reorderSections(order) {
+        var container = document.querySelector(".cv-container");
+        order.forEach(function (sel) {
+          var el = container.querySelector(sel);
+          if (el) container.appendChild(el);
+        });
+      }
+
       function setLang(lang) {
         document.documentElement.lang = lang;
-        document.querySelectorAll('[data-lang-en]').forEach(function (el) {
-          el.style.display = lang === 'en' ? '' : 'none';
+        document.querySelectorAll("[data-lang-en]").forEach(function (el) {
+          el.style.display = lang === "en" ? "" : "none";
         });
-        document.querySelectorAll('[data-lang-ko]').forEach(function (el) {
-          el.style.display = lang === 'ko' ? '' : 'none';
+        document.querySelectorAll("[data-lang-ko]").forEach(function (el) {
+          el.style.display = lang === "ko" ? "" : "none";
         });
-        localStorage.setItem('cv-lang', lang);
+        reorderSections(lang === "en" ? enOrder : koOrder);
+        localStorage.setItem("cv-lang", lang);
       }
 
       function toggleLang() {
-        var current = localStorage.getItem('cv-lang') || 'en';
-        setLang(current === 'en' ? 'ko' : 'en');
+        var current = localStorage.getItem("cv-lang") || "en";
+        setLang(current === "en" ? "ko" : "en");
       }
 
       function downloadPdf() {
-        var lang = localStorage.getItem('cv-lang') || 'en';
-        var filename = lang === 'ko' ? '정수진 이력서' : 'Soojin Jung CV';
-        var container = document.querySelector('.cv-container');
-        document.body.classList.add('pdf-mode');
+        var lang = localStorage.getItem("cv-lang") || "en";
+        var filename = lang === "ko" ? "정수진 이력서" : "Soojin Jung CV";
+        var container = document.querySelector(".cv-container");
+        document.body.classList.add("pdf-mode");
+        container.querySelectorAll("a").forEach(function (a) {
+          a.style.color = "#1a1a1a";
+        });
 
         // Wait for styles to apply before capturing
         requestAnimationFrame(function () {
           html2pdf()
             .set({
-              margin: [10, 10, 10, 10],
-              filename: filename + '.pdf',
-              image: { type: 'jpeg', quality: 0.98 },
-              html2canvas: { scale: 2, useCORS: true, scrollX: 0, scrollY: 0 },
-              jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' },
-              pagebreak: { before: ['.cv-section-projects'] }
+              margin: [10, 12, 10, 12],
+              filename: filename + ".pdf",
+              image: { type: "jpeg", quality: 0.98 },
+              html2canvas: {
+                scale: 2,
+                useCORS: true,
+                scrollX: 0,
+                scrollY: 0,
+                windowWidth: container.scrollWidth,
+              },
+              jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
+              pagebreak: { mode: "avoid-all" },
             })
             .from(container)
             .save()
             .then(function () {
-              document.body.classList.remove('pdf-mode');
+              document.body.classList.remove("pdf-mode");
+              container.querySelectorAll("a").forEach(function (a) {
+                a.style.color = "";
+              });
             });
         });
       }
 
-      setLang(localStorage.getItem('cv-lang') || 'en');
+      setLang(localStorage.getItem("cv-lang") || "en");
     </script>
   </body>
 </html>
