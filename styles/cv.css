@@ -1,13 +1,13 @@
 :root {
-  --accent: #ff3801;
-  --accent-dark: #e63200;
-  --accent-light: rgba(255, 56, 1, 0.08);
+  --accent: #222222;
+  --accent-dark: #1a1a1a;
+  --accent-light: #f3f3f3;
   --bg: #ffffff;
   --card-bg: #ffffff;
   --text-primary: #1a1a1a;
   --text-secondary: #444444;
   --text-muted: #999999;
-  --border: #eaeaea;
+  --border: #e0e0e0;
   --font-sans: "Inter", sans-serif;
 }
 
@@ -17,7 +17,7 @@ html[lang="ko"] * {
 
 ::selection {
   color: #ffffff;
-  background: var(--accent);
+  background: #222222;
 }
 
 body {
