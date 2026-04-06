@@ -492,18 +492,36 @@ html[lang="ko"] .cv-header h1 {
 }
 
 .pdf-mode .cv-section {
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
 .pdf-mode .cv-section-projects,
 .pdf-mode .cv-section-projects ~ .cv-section {
-  margin-bottom: 26px;
+  margin-bottom: 34px;
 }
 
 .pdf-mode .cv-section h2 {
   font-size: 14.5px;
   padding-bottom: 4px;
   margin-bottom: 8px;
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+.pdf-mode .cv-section {
+  break-inside: auto;
+}
+
+.pdf-mode .timeline-item {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+/* Korean PDF: Projects and Education start on new pages */
+html[lang="ko"] .pdf-mode .cv-section-projects,
+html[lang="ko"] .pdf-mode .cv-section-education {
+  break-before: page;
+  page-break-before: always;
 }
 
 .pdf-mode .about-text {
@@ -570,7 +588,7 @@ html[lang="ko"] .cv-header h1 {
 }
 
 .pdf-mode .cv-section-projects .timeline-item {
-  margin-bottom: 14px;
+  margin-bottom: 24px;
 }
 
 .pdf-mode .cv-section-projects .timeline-item h3 {
