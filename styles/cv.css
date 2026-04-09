@@ -78,6 +78,12 @@ body {
   background-color: var(--accent);
 }
 
+a.btn-pill {
+  text-decoration: none;
+  display: inline-block;
+  line-height: 1.2;
+}
+
 /* Header */
 .cv-header {
   text-align: center;
@@ -220,6 +226,19 @@ html[lang="ko"] .cv-header h1 {
 .timeline-item .description li {
   margin-bottom: 0.25rem;
   margin-left: 1rem;
+}
+
+/* Korean-only: first bullet in work experience renders as a description (no marker) */
+html[lang="ko"] .cv-section-experience .description li.parent-item {
+  list-style: none;
+  margin-left: 0;
+  margin-bottom: 0.5rem;
+}
+
+/* Emphasis on key keywords in description bullets */
+.timeline-item .description strong {
+  color: var(--text-primary);
+  font-weight: 700;
 }
 
 /* Skills */
@@ -517,11 +536,11 @@ html[lang="ko"] .cv-header h1 {
   page-break-inside: avoid;
 }
 
-/* Korean PDF: Projects and Education start on new pages */
+/* Korean PDF: allow natural flow (no forced page breaks) */
 html[lang="ko"] .pdf-mode .cv-section-projects,
 html[lang="ko"] .pdf-mode .cv-section-education {
-  break-before: page;
-  page-break-before: always;
+  break-before: auto;
+  page-break-before: auto;
 }
 
 .pdf-mode .about-text {
