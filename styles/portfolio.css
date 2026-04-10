@@ -1,0 +1,362 @@
+:root {
+  --accent: #222222;
+  --accent-dark: #1a1a1a;
+  --accent-light: #f3f3f3;
+  --bg: #ffffff;
+  --card-bg: #ffffff;
+  --text-primary: #1a1a1a;
+  --text-secondary: #444444;
+  --text-muted: #999999;
+  --border: #e0e0e0;
+  --font-sans: "Inter", sans-serif;
+}
+
+* {
+  font-family: "Pretendard", "Inter", sans-serif;
+}
+
+::selection {
+  color: #ffffff;
+  background: #222222;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text-primary);
+  line-height: 1.6;
+  padding: 2rem 1rem;
+}
+
+.portfolio-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Top bar */
+.portfolio-top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.back-link {
+  display: inline-block;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease-in-out;
+}
+
+.back-link:hover {
+  color: var(--accent);
+}
+
+.btn-pill {
+  background-color: var(--card-bg);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+  padding: 0.3rem 0.75rem;
+  border-radius: 16px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: var(--font-sans);
+  cursor: pointer;
+  transition:
+    border-color 0.3s ease-in-out,
+    color 0.3s ease-in-out,
+    background-color 0.3s ease-in-out;
+}
+
+.btn-pill:hover {
+  border-color: var(--accent);
+  color: #ffffff;
+  background-color: var(--accent);
+}
+
+/* Header */
+.portfolio-header {
+  text-align: center;
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 3px solid var(--accent);
+}
+
+.portfolio-header h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: 2px;
+  margin-bottom: 0.25rem;
+}
+
+.portfolio-header .title {
+  font-size: 1.1rem;
+  color: var(--accent);
+  font-weight: 500;
+}
+
+/* Company section */
+.company-section {
+  margin-bottom: 3rem;
+  counter-reset: card-counter;
+}
+
+.company-section + .company-section {
+  padding-top: 3rem;
+  border-top: 2px solid var(--border);
+}
+
+.company-heading {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+  border-bottom: 2px solid var(--accent);
+}
+
+.company-meta {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.company-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.company-tech span {
+  background-color: var(--accent-light);
+  color: var(--text-secondary);
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+/* Service introduction */
+.service-intro {
+  background-color: var(--accent-light);
+  border-left: 3px solid var(--accent);
+  padding: 1rem 1.25rem;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.service-intro-title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-bottom: 0.5rem;
+}
+
+.service-intro p {
+  margin-bottom: 0.75rem;
+}
+
+.service-intro p:last-child {
+  margin-bottom: 0;
+}
+
+/* Portfolio card */
+.portfolio-card {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 2.25rem;
+  overflow: hidden;
+  counter-increment: card-counter;
+}
+
+.card-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  padding: 0.75rem 1rem;
+  background-color: var(--accent-light);
+  border-bottom: 1px solid var(--border);
+}
+
+.card-title::before {
+  content: counter(card-counter, decimal-leading-zero) ". ";
+  color: var(--accent);
+  font-weight: 700;
+  margin-right: 0.25rem;
+}
+
+.card-body {
+  padding: 0.75rem 1rem;
+}
+
+.card-section {
+  margin-bottom: 0.5rem;
+}
+
+.card-section:last-of-type {
+  margin-bottom: 0.75rem;
+}
+
+.card-section h5 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 0.3rem;
+}
+
+.card-section p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.card-section p strong,
+.service-intro p strong {
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
+.card-contrib {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--border);
+}
+
+/* PDF download mode */
+.pdf-mode {
+  padding: 0 !important;
+}
+
+.pdf-mode .portfolio-top-bar {
+  display: none;
+}
+
+.pdf-mode .portfolio-container {
+  max-width: 100%;
+  margin: 0;
+  padding: 0 0 0 6px;
+  font-size: 15px;
+  line-height: 1.6;
+  overflow: visible;
+  word-break: keep-all;
+}
+
+.pdf-mode .portfolio-header {
+  padding-bottom: 14px;
+  margin-bottom: 16px;
+}
+
+.pdf-mode .portfolio-header h1 {
+  font-size: 28px;
+  margin-bottom: 4px;
+}
+
+.pdf-mode .portfolio-header .title {
+  font-size: 15px;
+}
+
+.pdf-mode a {
+  color: var(--text-primary) !important;
+}
+
+.pdf-mode .company-section {
+  margin-bottom: 28px;
+}
+
+.pdf-mode .company-section + .company-section {
+  padding-top: 24px;
+  border-top: 1.5px solid var(--border);
+}
+
+.pdf-mode .company-heading {
+  font-size: 14.5px;
+  padding-bottom: 4px;
+  margin-bottom: 6px;
+  break-after: avoid;
+  page-break-after: avoid;
+}
+
+.pdf-mode .company-meta {
+  font-size: 13px;
+  margin-bottom: 4px;
+}
+
+.pdf-mode .company-tech {
+  margin-bottom: 12px;
+}
+
+.pdf-mode .company-tech span {
+  font-size: 11px;
+  padding: 3px 8px;
+}
+
+.pdf-mode .service-intro {
+  padding: 10px 14px;
+  margin-bottom: 18px;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.pdf-mode .service-intro-title {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.pdf-mode .service-intro p {
+  margin-bottom: 6px;
+}
+
+.pdf-mode .portfolio-card {
+  margin-bottom: 26px;
+}
+
+.pdf-mode .card-title,
+.pdf-mode .card-section,
+.pdf-mode .card-contrib {
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.pdf-mode .card-title {
+  font-size: 14px;
+  padding: 8px 12px;
+}
+
+.pdf-mode .card-body {
+  padding: 8px 12px;
+}
+
+.pdf-mode .card-section h5 {
+  font-size: 13.5px;
+  margin-bottom: 3px;
+}
+
+.pdf-mode .card-section p {
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.pdf-mode .card-contrib {
+  font-size: 12px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .portfolio-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .company-tech {
+    gap: 0.3rem;
+  }
+}
