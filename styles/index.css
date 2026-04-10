@@ -10,7 +10,7 @@
 
 body {
   background-color: var(--bg);
-  min-height: 100vh;
+  min-height: 100svh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,4 +90,40 @@ a.button-wrap:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Mobile — fit content to device height, prevent scroll */
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+
+  .wrap {
+    gap: 12px;
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .profile {
+    width: 96px;
+    height: 96px;
+    margin-bottom: 2px;
+  }
+
+  .main {
+    font-size: 20px;
+  }
+
+  .sub {
+    margin-bottom: 14px;
+  }
+
+  a.button-wrap {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .dots {
+    margin-bottom: 6px;
+  }
 }

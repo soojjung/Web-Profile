@@ -90,34 +90,34 @@
           <span data-lang-en
             >3+ years of frontend experience building production web apps in
             fintech and AI. Led data-driven product decisions via GA4/Mixpanel
-            and established code review processes that measurably improved
-            quality. Recently expanded into backend and AI engineering — Spring
-            Boot REST APIs, JPA/MySQL, RAG pipelines — to deliver end-to-end
-            solutions. Actively integrating AI into the development workflow
-            through project-wide context systems and custom automation to
-            accelerate architectural decisions.</span
+            and established code conventions and review processes that
+            measurably improved quality. Recently expanded into backend and AI
+            engineering — Spring Boot REST APIs, JPA/MySQL, RAG pipelines — to
+            deliver end-to-end solutions. Actively integrating AI into the
+            development workflow through project-wide context systems and custom
+            automation, leveraging AI as a design review partner rather than a
+            mere code generation tool.</span
           >
           <span data-lang-ko
             >핀테크 및 AI 분야에서 3년의 프론트엔드 개발 경험을 바탕으로
             프로덕션급 웹 애플리케이션을 구축해 왔습니다. 확장 가능한 컴포넌트
             시스템 설계와 복잡한 백엔드/AI 서비스를 직관적인 사용자 인터페이스로
             통합하는 데 강점이 있습니다. GA4/Mixpanel 분석을 통한 데이터 기반
-            의사결정과 코드 리뷰 프로세스 도입으로 품질을 개선한 경험이
-            있습니다. 최근에는 백엔드 개발 및 AI 모델 서빙·연동으로 영역을
-            확장하여 Spring Boot · JPA/MySQL · FastAPI 기반 REST API 설계,
-            주문 상태 머신과 낙관적 잠금, EntityGraph 기반 N+1 최적화, OpenAI
-            + ChromaDB 기반 RAG 파이프라인을 통한 AI 모델 서비스 연동 등을
-            직접 구현해 왔습니다. 또한 개발 워크플로우
-            전반에 AI를 적극적으로 통합하여, 프로젝트 전반의 컨텍스트 시스템과
-            커스텀 자동화 커맨드를 구축함으로써 AI를 단순 코드 생성 도구가
-            아닌 설계 검토 파트너로 활용하며 아키텍처 의사결정의 속도와 품질을
-            함께 높여 왔습니다. 비록 지금까지의 경력은 프론트엔드 중심이지만,
-            궁극적으로는 화면 너머의 데이터 흐름·도메인 모델·인프라까지 서비스
-            전체를 조망하며 설계할 수 있는 풀스택 엔지니어로 성장하고자
-            합니다. 프론트부터 백엔드까지 제품의 모든
+            의사결정과 코드 컨벤션 문서화·코드 리뷰 프로세스 도입으로 팀의
+            품질을 개선한 경험이 있습니다.<br />최근에는 백엔드 개발 및 AI 모델
+            서빙·연동으로 영역을 확장하여 Spring Boot · JPA/MySQL · FastAPI 기반
+            REST API 설계, 주문 상태 머신과 낙관적 잠금, EntityGraph 기반 N+1
+            최적화, OpenAI + ChromaDB 기반 RAG 파이프라인을 통한 AI 모델 서비스
+            연동 등을 직접 구현해 왔습니다. 또한 개발 워크플로우 전반에 AI를
+            적극적으로 통합하여, 프로젝트 전반의 컨텍스트 시스템과 커스텀 자동화
+            커맨드를 구축함으로써 AI를 단순 코드 생성 도구가 아닌 설계 검토
+            파트너로 활용하고 있습니다.<br />비록 지금까지의 경력은 프론트엔드
+            중심이지만, 궁극적으로는 화면 너머의 데이터 흐름·도메인
+            모델·인프라까지 서비스 전체를 조망하며 설계할 수 있는 풀스택
+            엔지니어로 성장하고자 합니다. 프론트부터 백엔드까지 제품의 모든
             레이어를 책임지고 다룰 때 비로소 좋은 서비스가 만들어진다고 믿으며,
-            그러한 환경에서 깊이 있게 기여하며 성장해 나가고 싶다는 강한
-            열망을 가지고 있습니다.</span
+            그러한 환경에서 깊이 있게 기여하며 성장해 나가고 싶다는 강한 열망을
+            가지고 있습니다.</span
           >
         </p>
       </section>
@@ -172,6 +172,7 @@
               <span class="skill-tag">AWS</span>
               <span class="skill-tag">Google Analytics</span>
               <span class="skill-tag">GitHub Actions</span>
+              <span class="skill-tag">Claude Code</span>
             </div>
           </div>
         </div>
@@ -244,17 +245,16 @@
               >
             </li>
             <li data-lang-ko>
-              <strong>40+ 커스텀 훅</strong> 설계 및 Recoil atoms에
-              <strong>310+ 필드 중앙 관리</strong> (surveyState 170+ / selfState
-              140+, 금융 데이터·챗봇 플로우·UI 상태)
+              <strong>40+ 커스텀 훅</strong> 설계 및 Recoil atoms 책임별 분리로
+              <strong>260+ 필드 중앙 관리</strong> (140+ 필드 — 챗봇 UI 세션
+              상태 / 120+ 필드 — 백엔드·LLM 전달용 정규화 상태)
             </li>
             <li data-lang-ko>
-              GitHub Actions CI/CD 파이프라인 구축, AWS S3/CloudFront 배포
-              자동화 및 dev/production 환경 캐시 무효화 적용
+              GitHub Actions 기반 AWS S3/CloudFront 자동 배포 파이프라인 구축,
+              dev/production 환경 분리 및 CloudFront 캐시 무효화 적용
             </li>
             <li data-lang-ko>
-              Toss Payments SDK 결제 연동 및 주문·장바구니·결제 성공/실패 플로우
-              구현
+              Toss Payments SDK 연동 및 주문·결제·환불 플로우 구현
             </li>
           </ul>
           <div class="project-tech">
@@ -297,14 +297,12 @@
               >
               <span data-lang-ko
                 >React 18 SPA 기반 고객·운영·금융 파트너 3개 포탈 대출 중개
-                플랫폼 설계 및 구축 (<strong
-                  >JS 파일 1,350개 이상, 라우트 140개 이상</strong
-                >)</span
+                플랫폼 프론트엔드 설계 및 구축</span
               >
             </li>
             <li>
               <span data-lang-en
-                >Built 99+ reusable UI components and a config-based SearchTable
+                >Built 86+ reusable UI components and a config-based SearchTable
                 pattern, reducing dev time by 60% across 30+ pages.</span
               >
               <span data-lang-ko
@@ -315,14 +313,16 @@
             </li>
             <li>
               <span data-lang-en
-                >Established code review process, cutting QA defects by 50% and
-                maintenance effort by 70%. Implemented JWT auto-renewal with
-                Request Queue pattern for secure financial data handling.</span
+                >Led team-wide code conventions and guidelines documentation as
+                the team grew (2 → 3), cutting refactoring time by 30%, then
+                introduced PR-based code review process anchored on the
+                conventions, reducing post-release bugs by 50%.</span
               >
               <span data-lang-ko
-                >코드 리뷰 프로세스 도입으로
-                <strong>QA 버그 결함 50% 감소</strong> 및
-                <strong>유지보수 공수 70% 절감</strong></span
+                >팀 확장(2→3명)에 따른 코드 컨벤션 및 개발 가이드 문서화 주도로
+                <strong>리팩토링 시간 30% 절감</strong>, 이어서 컨벤션을
+                기준으로 한 PR 코드 리뷰 프로세스(승인 1명 필수) 도입으로
+                <strong>릴리스 후 버그 50% 감소</strong></span
               >
             </li>
             <li data-lang-ko>
@@ -336,8 +336,8 @@
               계층 통일
             </li>
             <li data-lang-ko>
-              라우트·메뉴·요소 단위 다계층 권한 관리 시스템 구축
-              (AuthRouteOutlet, ProtectedRoute, withoutAuth)
+              라우트·메뉴·요소 단위 3계층 권한 관리 시스템 구축 및 설정 기반
+              역할 확장 구조 설계
             </li>
             <li data-lang-ko>
               DOMPurify 기반 XSS 방어, 로그인 10회 실패 시 5분 잠금 등 금융
@@ -586,8 +586,8 @@
               >
             </li>
             <li data-lang-ko>
-              SEO/SSR 최적화로 <strong>83% 자연 유입 트래픽</strong> 달성, 구글
-              첫 페이지 노출
+              SEO/SSR 최적화로 <strong>83% 자연 유입 트래픽</strong> 달성,
+              "퍼스널컬러 테스트" 키워드 구글 검색 첫 페이지 노출
             </li>
           </ul>
           <div class="project-tech">

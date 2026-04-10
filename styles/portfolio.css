@@ -218,6 +218,12 @@ body {
   line-height: 1.7;
 }
 
+.card-section p strong,
+.service-intro p strong {
+  color: var(--text-primary);
+  font-weight: 700;
+}
+
 .card-contrib {
   font-size: 0.8rem;
   font-weight: 600;
