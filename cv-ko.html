@@ -4,7 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>정수진 — 이력서</title>
+    <meta property="og:title" content="정수진 이력서" />
+    <meta property="og:description" content="Soojin Jung Resume" />
+    <title>정수진 이력서</title>
     <link rel="alternate" hreflang="en" href="cv.html" />
     <link rel="alternate" hreflang="ko" href="cv-ko.html" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -75,8 +77,9 @@
           방어를 구현했고, AI 금융 서비스에서는 Toss Payments SDK 연동과
           주문·결제·환불 플로우를 맡았습니다. 아울러 재사용 컴포넌트, 배포
           자동화, PR 리뷰 프로세스 도입으로 반복되는 작업을 구조적으로
-          줄였습니다.<br />이후 백엔드·AI 부트캠프를 수료했고, 개인
-          프로젝트에서는 TypeScript로 만든 웹과 iOS 서비스(누적 85,000회 진단
+          줄였습니다.<br />이후 백엔드·AI 부트캠프와 피지컬 AI 로봇 부트캠프를
+          수료했고, 개인 프로젝트에서는 TypeScript로 만든 웹과 iOS 서비스(누적
+          85,000회 진단
           웹, App Store <span class="nowrap">앱)를</span> 운영하며 Sentry 장애
           모니터링과 접근성 대응을 적용했습니다. 또한 Claude Code에 역할별
           서브에이전트와 도메인 규칙을 구성하고, 커밋 품질 게이트를 만들어 AI를
@@ -139,38 +142,26 @@
           <p class="period">2024년 10월 — 2025년 5월 (8개월)</p>
           <ul class="description">
             <li class="parent-item">
-              챗봇 상담으로 신혼부부 맞춤 재무 로드맵을 만들어 주는 AI 금융
-              서비스
+              챗봇 상담으로 신혼부부 맞춤 재무 로드맵을 만들어 주는 AI 금융 서비스
             </li>
             <li>
-              <strong>Toss Payments SDK</strong> 기반 결제·환불 플로우 구현
+              재무 리포트를 포함한 유료 재무 챗봇 상담의 <strong>Toss Payments SDK 결제·환불 플로우</strong> 구현, 결제 중 이탈·재진입·뒤로가기 등 엣지 케이스 처리
             </li>
             <li>
-              <strong>SSE 스트리밍 챗봇 UI</strong> 구현 — 토큰 누적
-              렌더링·타이핑 딜레이, 답변 중 입력 차단, 리포트 용어 클릭 시 챗봇
-              설명 연동
+              <strong>SSE 스트리밍 챗봇 UI</strong> 구현 — 토큰 누적 렌더링·타이핑 딜레이, 답변 중 입력 차단, 리포트 용어 클릭 시 챗봇 설명 연동
             </li>
             <li>
-              Chart.js 기반 소득·부채·DSR·은퇴 등
-              <strong>재무 리포트 30여 종</strong> 시각화
+              Chart.js 기반 소득·부채·DSR·은퇴 등 <strong>재무 리포트 30여 종</strong> 시각화
+            </li>
+            <li>
+              결제 전 이탈 단계와 실제 사용자층을 파악해 다음 기획에 반영하려 GA4/Mixpanel로 결제 완료까지 단계별 이벤트 추적, <strong>60대 이상 사용자</strong>·<strong>95% 모바일 접속</strong> 패턴 발견
             </li>
             <li>
               Zod·React Hook Form 기반 <strong>재무 정보 입력 검증</strong> 구현
               — 연차·나이, 저축액·월소득 등 필드 간 교차 검증
             </li>
             <li>
-              GitHub Actions 기반 S3/CloudFront
-              <strong>자동 배포 파이프라인 구축</strong>, PR 머지 자동 배포로
-              환경 변수 누락 오류 제거
-            </li>
-            <li>
-              <strong>50+ 커스텀 훅</strong> 설계, Recoil 기반 챗봇 세션 상태
-              <strong>140+ 필드 중앙 관리</strong>
-            </li>
-            <li>
-              GA4/Mixpanel로 결제 완료까지 단계별 이벤트 추적,
-              <strong>60대 이상 사용자</strong>·<strong>95% 모바일 접속</strong>
-              패턴 발견
+              GitHub Actions 기반 S3/CloudFront <strong>자동 배포 파이프라인</strong> 구축, PR 머지 자동 배포로 환경 변수 누락 오류 제거
             </li>
           </ul>
           <div class="project-tech">
@@ -182,6 +173,7 @@
             <span>Zod</span>
             <span>Tailwind CSS</span>
             <span>GitHub Actions</span>
+            <span>GA4</span>
           </div>
         </div>
 
@@ -195,20 +187,21 @@
               대출을 중개하는 금융 플랫폼
             </li>
             <li>
-              React 18 SPA 기반 고객·운영·금융 파트너 3개 포탈 대출 중개 플랫폼
-              프론트엔드 개발
+              3인 팀에서 KB국민은행 대출 매칭 플랫폼 &lsquo;Seller
+              CreditConnect&rsquo; 프론트엔드 개발 주도,
+              <strong>대출 신청 전환율 34%</strong> 달성
             </li>
             <li>
-              <strong>50개 이상 재사용 UI 컴포넌트</strong>(디자인 시스템) 개발,
-              SearchTable 공통 모듈 확장으로 30+ 페이지
-              <strong>개발 시간 50% 단축</strong>
+              <strong>React 18 SPA 아키텍처</strong> 설계, 고객(FO)·사내 운영
+              백오피스(BO)·금융 파트너(PO) 3개 포탈 개발
             </li>
             <li>
               <strong>Request Queue 패턴 기반 JWT 자동 갱신</strong>으로 토큰
               만료 시 동시 요청 실패·세션 끊김 방지
             </li>
             <li>
-              로그인 10회 실패 시 5분 잠금 구현, DOMPurify 기반 XSS 방어 적용 등
+              2차 본인인증·인증 라우트 가드, 로그인 10회 실패 시 5분 잠금,
+              DOMPurify 기반 XSS 방어 등
               <strong>금융 서비스 보안 요구사항</strong> 대응
             </li>
             <li>
@@ -217,8 +210,25 @@
               확장 가능
             </li>
             <li>
-              코드 컨벤션 문서화로 <strong>리팩토링 시간 30% 절감</strong>, PR
-              리뷰 프로세스 도입으로 <strong>릴리스 후 버그 40% 감소</strong>
+              디자이너 부재로 흐트러진 UI 일관성을
+              <strong>50개 이상 재사용 UI 컴포넌트</strong>(디자인 시스템)로
+              정리, SearchTable 공통 모듈로 30+ 페이지
+              <strong>개발 시간 50% 단축</strong>
+            </li>
+            <li>
+              팀 확장 뒤 반복된 릴리스 직후 버그와 개발자별로 달랐던 코드 스타일
+              문제를 PR 리뷰 프로세스 도입과 코드 컨벤션 제안으로 해결,
+              <strong>릴리스 후 버그 40% 감소</strong>(JIRA 이슈
+              기준)·<strong>리팩토링 시간 30% 절감</strong>
+            </li>
+            <li>
+              비대해진 백오피스 코드 구조를 리팩토링해
+              <strong>번들 크기 28% 감소</strong>, 빌드·배포 부담 완화
+            </li>
+            <li>
+              금융 도메인 50페이지 문서로 높았던 신규 입사자 진입 장벽을 2페이지
+              요약 문서로 낮춰 <strong>온보딩 기간 단축</strong>, PM의 신규 기능
+              기획에 활용
             </li>
           </ul>
           <div class="project-tech">
@@ -312,7 +322,7 @@
               <strong>91.5% 완료율</strong> 기록
             </li>
             <li>
-              <strong>GPT-4o Vision</strong> 기반 AI 색상 추천 추가, gpt-4o-mini
+              <strong>GPT-4o Vision 기반 AI 색상 추천</strong> 추가, gpt-4o-mini
               &rarr; gpt-4o <strong>폴백 라우팅</strong>으로 비용·정확도 균형
               확보, 혼자 색을 고르기 어려운 유저의 진단 참여도 향상
             </li>
@@ -330,6 +340,51 @@
             <span>Styled-components</span>
             <span>Firebase</span>
             <span>OpenAI GPT-4o</span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <h3>대학병원 안내·조제 로봇 관제 시스템</h3>
+          <p class="project-link">
+            <a href="https://mingkycarepro.site/medical" target="_blank"
+              >mingkycarepro.site/medical</a
+            >
+            <span class="dot">·</span>
+            <a
+              href="https://github.com/finalproject3fastcamp/mingky_care_pro"
+              target="_blank"
+              >github.com/finalproject3fastcamp/mingky_care_pro</a
+            >
+          </p>
+          <p class="period">2026년 8월 · 6인 팀 프로젝트</p>
+          <ul class="description">
+            <li>
+              <strong>의료진 대시보드</strong> 구현 — 로봇
+              상태·목적지·배터리를 세션 이벤트에서 파생, 로봇별
+              URL(/medical/:robotId)로 화면 분리
+            </li>
+            <li>
+              <strong>QR 환자 확인 흐름</strong> 구현(ROS2 노드 &rarr; FastAPI
+              &rarr; 안내 세션 시작) — 의료진이 활성화한 로봇만 QR을 읽고, 폴링
+              연속 실패 시 스스로 해제
+            </li>
+            <li>
+              로봇 카메라 미리보기를 새 프레임만 640px로 송출해 무선 대역
+              <strong>13.1 &rarr; 1.1 Mbps</strong>로 줄이고 수 초 지연 해소
+            </li>
+            <li>
+              LeRobot ACT <strong>모방학습 파이프라인</strong> 구축(29
+              에피소드·40,000 스텝), 약통을 봉투에 넣는 정책을 약국 화면의 포장
+              단계에 실제 로봇팔로 연결
+            </li>
+          </ul>
+          <div class="project-tech">
+            <span>TypeScript</span>
+            <span>React 19</span>
+            <span>FastAPI</span>
+            <span>PostgreSQL</span>
+            <span>ROS2</span>
+            <span>LeRobot (ACT)</span>
           </div>
         </div>
 
@@ -388,7 +443,8 @@
           <p class="period">2026년 1월 — 2026년 4월</p>
           <ul class="description">
             <li>
-              Container/Presenter 패턴 기반 3계층 아키텍처 설계, 21개 API 훅에
+              Capacitor 기반 iOS 앱 <strong>App Store 출시</strong>,
+              Container/Presenter 패턴 3계층 아키텍처와 21개 API 훅에
               <strong>하이브리드 상태 관리</strong>(TanStack Query + Zustand)
               적용
             </li>
@@ -396,6 +452,10 @@
               <strong>지도 API 호출 최적화</strong> — 뷰포트 기반 조회와
               &lsquo;이 지역 재검색&rsquo; 버튼으로 이동 중 자동 재조회 제거,
               축소 시 클러스터 API 전환
+            </li>
+            <li>
+              아키텍처·코딩 표준 문서를 <strong>AI 컨텍스트(.ai/)</strong>로
+              관리해 팀 컨벤션 일관성 확보, AI를 설계 검토에 활용
             </li>
           </ul>
           <div class="project-tech">
@@ -406,6 +466,43 @@
             <span>TanStack Query</span>
             <span>Capacitor</span>
             <span>Sentry</span>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <h3>RAG 기반 신혼부부 정책 AI 도우미</h3>
+          <p class="project-link">
+            <a href="https://bbumate.com" target="_blank">bbumate.com</a>
+            <span class="dot">·</span>
+            <a
+              href="https://github.com/soojjung/bbumate-policy-chat"
+              target="_blank"
+              >github.com/soojjung/bbumate-policy-chat</a
+            >
+          </p>
+          <p class="period">2025년 10월 — 2025년 12월</p>
+          <ul class="description">
+            <li>
+              LangChain + ChromaDB 기반
+              <strong>End-to-End RAG 파이프라인</strong> 구축, 113개
+              이상 정책 통합 관리 및 병렬 문서 평가로
+              <strong>지연시간 66% 단축</strong>
+            </li>
+            <li>
+              RAG &rarr; 쿼리 재작성 &rarr; 웹 검색 순서의
+              <strong>다단계 폴백 전략</strong> 설계,
+              <strong>100% 쿼리 처리율</strong> 달성
+            </li>
+            <li>
+              97개 이상 URL 매핑 기반 <strong>고신뢰 그라운딩 시스템</strong> 구축, 모든 AI
+              응답에 공식 문서 출처 100% 명시
+            </li>
+          </ul>
+          <div class="project-tech">
+            <span>Python</span>
+            <span>FastAPI</span>
+            <span>LangChain</span>
+            <span>ChromaDB</span>
           </div>
         </div>
 
@@ -421,7 +518,11 @@
           <p class="period">2025년 8월 — 2025년 10월</p>
           <ul class="description">
             <li>
-              토스 결제 연동(테스트 환경) 및 401 Silent Refresh·Route
+              Spring Boot + React 기반 이커머스 플랫폼 구축,
+              인증·상품·장바구니·주문·리뷰 등 <strong>핵심 사용자 플로우</strong> 구현
+            </li>
+            <li>
+              <strong>토스 결제 연동</strong>(테스트 환경) 및 401 Silent Refresh·Route
               Guard·게스트/회원 장바구니 병합 구현
             </li>
             <li>
@@ -452,7 +553,7 @@
 
         <div class="timeline-item">
           <h3>백엔드 &amp; AI 엔지니어링 부트캠프</h3>
-          <p class="company">패스트캠퍼스 K-Digital Training</p>
+          <p class="company">패스트캠퍼스 커널 아카데미 K-Digital Training</p>
           <p class="period">2025년 6월 — 2025년 12월</p>
           <ul class="description">
             <li>
@@ -465,6 +566,22 @@
             </li>
           </ul>
         </div>
+
+        <div class="timeline-item">
+          <h3>피지컬 AI 로봇 부트캠프</h3>
+          <p class="company">패스트캠퍼스 커널 아카데미 K-Digital Training</p>
+          <p class="period">2026년 6월 — 2026년 8월</p>
+          <ul class="description">
+            <li>
+              ROS2(토픽·서비스·액션·TF), SLAM·Nav2 자율주행, PID 주행 제어,
+              Isaac Sim/Lab 시뮬레이션
+            </li>
+            <li>
+              YOLO 객체 인식, LeRobot 기반 모방학습(데이터 수집·학습·추론),
+              로봇팔 제어 및 Hand-Eye Calibration
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- Additional -->
@@ -473,7 +590,12 @@
         <ul class="additional-list">
           <li>
             Data Structures — University of California San Diego (Coursera,
-            2026년 3월)
+            2026년)
+          </li>
+          <li>Google Analytics 자격증 (GA4, 2026년)</li>
+          <li>
+            테오콘 2024 (3회) 스태프 — 행사 운영 지원 및 참가자 200명 이상
+            응대
           </li>
         </ul>
       </section>

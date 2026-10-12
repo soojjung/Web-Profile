@@ -615,7 +615,7 @@ html[lang="ko"] .pdf-mode .cv-section-education {
 
 /* Page 2 — projects & additional: larger sizing */
 .pdf-mode .cv-section-projects {
-  margin-bottom: 26px;
+  margin-bottom: 48px;
 }
 
 .pdf-mode .cv-section-projects .timeline-item {
